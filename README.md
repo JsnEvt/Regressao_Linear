@@ -1,18 +1,69 @@
-# Regressao_Linear
-## Regressão linear simples - Qual a velocidade se levou x distância para parar ?
-### Este trabalho visa descrever os critérios de regressão para estes cálculos.
 
-### Aqui, faço uma descrição do conceito de Regressão linear.
-#### Entre duas ou mais variáveis, podemos desejar ver a relação que existe entre elas e medir sua força. Um exemplo de regressão linear seria medir um plano de saúde. Quanto maior a idade, mais caro ele é. Outro exemplo em altitude, quanto mais alto, mais frio.
-#### À partir daí, poderíamos ter um gráfico de dispersão e prever à partir de novos valores, sendo que esses valores não poderiam fugir da ‘regularidade’ em que ocorrem, visto que prejudicariam o modelo por não corresponder a uma linearidade, cujo nome, a função recebe.
-#### Uma função linear forte pode ser positiva (de baixo para cima) ou negativa (de cima para baixo) num gráfico linear.
-#### Tomando o exemplo do plano de saúde,  podemos considerar a idade e o custo como valores que refletem a projeção do gráfico. Em um plano cartesiano, colocamos a Idade no exio X e o custo no eixo Y. Se o custo do plano é menor para pessoas novas e cresce à medida que a idade aumenta, teremos uma projeção linear crescente. O mesmo poderia ocorrer em outra situação: a temperatura sobe, a venda de casacos, caem. Indicando que a projeção é fortemente decrescente. Isso também é uma regressão válida.
-#### O coeficiente de determinação visa explicar o quão a variável dependente (a que desejamos prever) pode ser explicadas pelos valores contidos nas variáveis explanatórias (os valores que temos como base para gerar as previsões).
-#### Um bom modelo de regressão linear não deve percorrer fielmente o a trilha tecida pelos cruzamentos do eixo X e Y em um plano cartesiano. Isso poderia levar a boas respostas em modelos de treino, porém incorreria em sérios erros em modelo de teste. O ideal é que o gráfico tenha um corte transversal na altura média em que os valores são lançados. Pertos ou afastados demais comprometeriam o modelo a ser desenvolvido.
-#### Na construção do modelo é possível encontrarmos registros (pontos) num plano cartesiano que fogem bastante da curva. Esses pontos não devem ter forte interferências sobre os registros predominantes sob pena de comprometer a correlação entre eles.  A esses elementos damos o nome de outliers ou extrapolação.
-#### Outliers fogem completamente do padrão. 
-#### Extrapolação foge um pouco da tendência da projeção gráfica.
-#### Os cálculos para regressão linear compreendem os seguintes elementos:
-#### Correlação -> Inclinação -> Interceptação -> Previsão
-#### [Arquivo Excel -XLSX] (Cálculos.xlsx)
-<sub>Mostro como os cálculos são realizados. Observem as fontes dos valores em cada célula que contém as fórmulas.</sub>
+
+# 🚗 Regressão Linear com Dados de Carros
+
+Projeto desenvolvido durante o curso **Formação Cientista de Dados: O Curso Completo**, ministrado por **Fernando Amaral (Udemy)**.  
+O objetivo é aplicar **Regressão Linear** para compreender e prever relações entre variáveis de automóveis (como preço, consumo, potência, quilometragem, entre outros).
+
+---
+
+## 📌 Proposta do Projeto
+- Demonstrar o uso de **regressão linear simples e múltipla** em dados de carros.  
+- Analisar como variáveis independentes (ex.: motor, peso, ano, quilometragem) influenciam uma variável dependente (ex.: preço).  
+- Avaliar estatisticamente o modelo para medir sua qualidade preditiva.  
+- Visualizar graficamente a reta de regressão e os resíduos para validar os resultados.  
+
+---
+
+## 🧠 Conceitos de Regressão Linear Abordados
+- **Regressão Linear Simples** → quando há apenas uma variável explicativa.  
+- **Regressão Linear Múltipla** → quando múltiplas variáveis são usadas para prever o alvo.  
+- **Coeficientes da regressão** → mostram o impacto de cada variável sobre a variável dependente.  
+- **R² (Coeficiente de Determinação)** → mede a qualidade do ajuste do modelo.  
+- **Análise de resíduos** → avalia erros do modelo para detectar padrões ou problemas.  
+
+---
+
+## 📚 Bibliotecas Utilizadas
+- **Pandas** → leitura e manipulação de dados em formato tabular.  
+- **NumPy** → suporte a cálculos numéricos e vetoriais.  
+- **Scikit-learn** → implementação da regressão linear, divisão treino/teste, métricas de avaliação.  
+- **Matplotlib / Seaborn** → visualização dos dados, dispersões e linha de regressão.  
+
+---
+
+1. **Clone este repositório**:
+```bash
+git clone https://github.com/JsnEvt/Regressao_Linear.git
+cd Regressao_Linear
+```
+
+2. Crie e ative um ambiente virtual (opcional, mas recomendado):
+```bash
+python -m venv venv
+```
+Ativar no Windows
+```bash
+venv\Scripts\activate
+```
+Ativar no Linux/Mac
+```bash
+source venv/bin/activate
+```
+Instale as dependências:
+```bash
+pip install -r requirements.txt
+```
+
+3. Abra o projeto no VS Code e execute célula por célula
+
+📊 Resultados Esperados
+
+Geração de gráficos de dispersão com linha de regressão ajustada.
+
+👨‍🏫 Créditos
+
+Projeto baseado no curso Formação Cientista de Dados: O Curso Completo de Fernando Amaral - Udemy
+
+
+
